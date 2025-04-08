@@ -1,6 +1,5 @@
 ### Hi there 👋  
 <br/>
--👨🏻‍💻 Computer Science student  <br/>
 -⚙️ Primary intrested in Python, C++, Go  <br/>
 <br/>
 <br/>

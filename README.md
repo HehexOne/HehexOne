@@ -1,3 +1,1 @@
-### Hi there 👋  
-
-###### TODO: rework
+### Hi there 👋

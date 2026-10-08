@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<title id="title">HehexOne</title><desc id="desc">Soft blue light drifting through a grainy atmospheric background. Dark theme.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#004bdd"/><stop offset=".48" stop-color="#0074ff"/><stop offset=".78" stop-color="#57a8ff"/><stop offset="1" stop-color="#bde9ff"/></linearGradient>
+  <linearGradient id="core"><stop stop-color="#5688ff" stop-opacity="0"/><stop offset=".5" stop-color="#a8dbff"/><stop offset="1" stop-color="#a8dbff" stop-opacity="0"/></linearGradient>
+  <radialGradient id="fade"><stop offset="0" stop-color="white"/><stop offset=".58" stop-color="white"/><stop offset="1" stop-color="black"/></radialGradient>
+  <mask id="edge"><ellipse cx="620" cy="240" rx="690" ry="345" fill="url(#fade)"/></mask>
+  <filter id="bloom" x="-60%" y="-100%" width="220%" height="300%"><feGaussianBlur stdDeviation="38"/></filter>
+  <filter id="soft" x="-60%" y="-100%" width="220%" height="300%"><feGaussianBlur stdDeviation="16"/></filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer></filter>
+</defs>
+<rect width="1200" height="500" fill="#0d1117"/>
+<g mask="url(#edge)">
+ <g opacity=".92">
+  <g><animateTransform attributeName="transform" type="translate" values="-18 10;24 -12;-18 10" dur="12s" repeatCount="indefinite"/>
+   <path d="M -170 455 C 45 360 125 130 420 125 S 685 350 1000 155 S 1190 5 1350 -15" fill="none" stroke="url(#blue)" stroke-width="140" filter="url(#bloom)"/>
+   <path d="M -170 455 C 45 360 125 130 420 125 S 685 350 1000 155 S 1190 5 1350 -15" fill="none" stroke="url(#blue)" stroke-width="50" filter="url(#soft)" opacity=".65"/>
+  </g>
+  <g opacity=".65"><animateTransform attributeName="transform" type="translate" values="22 15;-25 -10;22 15" dur="16s" repeatCount="indefinite"/>
+   <path d="M 280 600 C 450 390 760 465 930 332 S 1150 300 1380 145" fill="none" stroke="#0068f0" stroke-width="145" filter="url(#bloom)"/>
+   <path d="M -80 262 C 115 150 165 94 348 70" fill="none" stroke="url(#core)" stroke-width="28" filter="url(#soft)"/>
+  </g>
+ </g>
+ <rect width="1200" height="500" filter="url(#grain)" opacity=".48"/>
+</g>
+<text x="600" y="286" text-anchor="middle" fill="#f4f8ff" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-6">HehexOne</text>
+<text x="600" y="335" text-anchor="middle" fill="#a6bfe7" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="4">GITHUB / HEHEXONE</text>
+</svg>
